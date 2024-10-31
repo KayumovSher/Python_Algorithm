@@ -5,7 +5,7 @@ n = int(input('n = '))
 
 print()
 
-matrix = [[randint(1,9) for i in range(n)]for i in range(m)]
+matrix = [[randint(1,9) for i in range(m)]for j in range(n)]
 
 for i in matrix:
     print(*i)
@@ -13,6 +13,6 @@ for i in matrix:
 print()
     
 for i in range(len(matrix)):
-    for j in range(1, len(matrix[0]),2):
-        print(matrix[i][j],end=' ')
-    print() 
+    for j in range(0, len(matrix[0]),2):
+        print(matrix[i][j], end=' ')
+    print()
